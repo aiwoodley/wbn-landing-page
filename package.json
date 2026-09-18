@@ -1,8 +1,8 @@
 {
-  "name": "wbn-landing-page",
+  "name": "woodley-solutions-landing-page",
   "version": "1.0.0",
   "private": true,
-  "description": "Woodley Brothers Networks (WBN) \u2014 cinematic lead-capture landing page, PDF lead magnet, personalization engine, and lead/newsletter/booking pipeline. Deployed on Netlify (static site + Functions), Supabase (data), Resend (email), Stripe (payments).",
+  "description": "Woodley Solutions \u2014 cinematic lead-capture landing page, PDF lead magnet, personalization engine, and lead/newsletter/booking pipeline. Deployed on Netlify (static site + Functions), Supabase (data), Resend (email), Stripe (payments).",
   "scripts": {
     "dev": "netlify dev",
     "build:pdf": "python3 build_pdf_spec.py"

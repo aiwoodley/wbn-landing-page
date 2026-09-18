@@ -1,9 +1,9 @@
-// Woodley Brothers Networks — engagement tracking + personalization + form capture
+// Woodley Solutions — engagement tracking + personalization + form capture
 (function () {
   "use strict";
 
-  var API_BASE = window.WBN_API_BASE || ""; // same-origin by default
-  var STORE_KEY = "wbn_engagement_v1";
+  var API_BASE = window.WOODLEY_API_BASE || ""; // same-origin by default
+  var STORE_KEY = "woodley_engagement_v1";
 
   // ---------- persisted engagement model ----------
   function loadState() {

@@ -6,7 +6,7 @@ const { isValidEmail, json } = require("./_util");
 
 const PRODUCTS = {
   premium_guide: {
-    name: "WBN Premium Home Network Guide",
+    name: "Woodley Solutions Premium Home Network Guide",
     description:
       "Expanded edition: VLAN segmentation, Suricata IDS/IPS, Frigate NVR builds, and our client audit-report templates.",
     amount_cents: 1999, // $19.99 — adjust in Stripe/env once final pricing is set

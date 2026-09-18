@@ -1,4 +1,4 @@
--- WBN landing page schema
+-- Woodley Solutions landing page schema
 -- Run in the Supabase SQL editor (or via `supabase db push` once linked).
 
 create table if not exists public.leads (

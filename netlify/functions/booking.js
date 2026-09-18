@@ -1,6 +1,6 @@
 // POST /api/booking -> /.netlify/functions/booking
-// The real sales pipeline: a quote/booking request. Notifies WBN via Resend
-// so a lead doesn't sit unseen in a database.
+// The real sales pipeline: a quote/booking request. Notifies Woodley Solutions
+// via Resend so a lead doesn't sit unseen in a database.
 const { getSupabaseAdmin } = require("./_supabase");
 const { getResend, FROM_ADDRESS } = require("./_resend");
 const { isValidEmail, json } = require("./_util");
@@ -39,7 +39,7 @@ exports.handler = async (event) => {
     await resend.emails.send({
       from: FROM_ADDRESS,
       to: notifyTo,
-      subject: `New WBN booking request: ${interest || "unspecified"} — ${name}`,
+      subject: `New Woodley Solutions booking request: ${interest || "unspecified"} — ${name}`,
       html: `<p><strong>${name}</strong> (${email}) requested: ${interest || "unspecified"}</p>
 <p>${(details || "").replace(/</g, "&lt;")}</p>`,
       reply_to: email,

@@ -11,6 +11,6 @@ function getResend() {
   return client;
 }
 
-const FROM_ADDRESS = process.env.RESEND_FROM || "WBN <info@woodleysolutions.tech>";
+const FROM_ADDRESS = process.env.RESEND_FROM || "Woodley Solutions <info@woodleysolutions.tech>";
 
 module.exports = { getResend, FROM_ADDRESS };

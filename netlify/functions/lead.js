@@ -6,7 +6,7 @@ const { getSupabaseAdmin } = require("./_supabase");
 const { getResend, FROM_ADDRESS } = require("./_resend");
 const { isValidEmail, json } = require("./_util");
 
-const DOWNLOAD_PATH = "/assets/wbn-home-network-starter-stack.pdf";
+const DOWNLOAD_PATH = "/assets/woodley-solutions-home-network-starter-stack.pdf";
 
 exports.handler = async (event) => {
   if (event.httpMethod !== "POST") return json(405, { error: "method_not_allowed" });
@@ -45,7 +45,7 @@ exports.handler = async (event) => {
       html: `<p>Here's your copy of <strong>The Complete Home Network Starter Stack</strong>:</p>
 <p><a href="${downloadUrl}">${downloadUrl}</a></p>
 <p>Want it built for you instead? Reply to this email or book a build at ${siteUrl}#contact.</p>
-<p>— Woodley Brothers Networks</p>`,
+<p>— Woodley Solutions</p>`,
     });
     emailSent = true;
   } catch (e) {

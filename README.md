@@ -1,8 +1,8 @@
-# Woodley Brothers Networks — Landing Page
+# Woodley Solutions — Landing Page
 
-Lead-capture landing page for **Woodley Brothers Networks (WBN)**, a DBA of
-Woodley Web Services LLC. Cinematic dark landing page + PDF lead magnet +
-returning-visitor personalization + booking pipeline, deployed on:
+Lead-capture landing page for **Woodley Solutions**. Cinematic dark landing
+page + PDF lead magnet + returning-visitor personalization + booking
+pipeline, deployed on:
 
 - **Netlify** — static site hosting + serverless Functions (`netlify/functions/`)
 - **Supabase** — Postgres database (leads, newsletter subscribers, bookings, orders)
@@ -57,15 +57,12 @@ resend.dev sandbox address.
 
 ## The PDF lead magnet
 
-`assets/wbn-home-network-starter-stack.pdf` is generated from
-`guide_content.md` via `build_pdf_spec.py` + the `pdf` skill's
-`pdf_create.py`. Regenerate after editing the guide content:
-
-```bash
-python3 build_pdf_spec.py
-python3 /path/to/hermes/skills/productivity/pdf/scripts/pdf_create.py \
-  guide_spec.json -o assets/wbn-home-network-starter-stack.pdf
-```
+`assets/woodley-solutions-home-network-starter-stack.pdf` is the real Guide 1
+of 4 in the Home Network Series ("The Complete Home Network Starter Stack").
+`guide_content.md` / `build_pdf_spec.py` / `guide_spec.json` are leftover
+tooling from an earlier draft-generation pass and are not what's currently
+served — kept only as a reference workflow for authoring future guides in
+the series (2: NAS/Jellyfin, 3: local AI, 4: self-hosted video/security).
 
 ## Personalization
 

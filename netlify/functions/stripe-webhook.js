@@ -53,12 +53,12 @@ exports.handler = async (event) => {
         await resend.emails.send({
           from: FROM_ADDRESS,
           to: email,
-          subject: "Your WBN Premium Guide",
+          subject: "Your Woodley Solutions Premium Guide",
           html: `<p>Thanks for the purchase — your premium guide is on its way.</p>
 <p>If you don't see the attachment shortly, reply to this email and we'll resend it directly.</p>
-<p>— Woodley Brothers Networks</p>`,
+<p>— Woodley Solutions</p>`,
           // NOTE: attach the actual premium PDF here once it's written, e.g.
-          // attachments: [{ filename: 'wbn-premium-guide.pdf', path: '<url or base64>' }]
+          // attachments: [{ filename: 'woodley-solutions-premium-guide.pdf', path: '<url or base64>' }]
         });
       } catch (e) {
         console.error("resend send (premium guide) failed", e);
