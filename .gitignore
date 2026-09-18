@@ -1,0 +1,6 @@
+node_modules/
+data/*.jsonl
+.DS_Store
+.venv/
+.env
+.netlify/

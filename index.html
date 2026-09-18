@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Woodley Brothers Networks — The Good Fellas | Home Network &amp; Security Builds</title>
+<meta name="description" content="Free guide: The Complete Home Network Starter Stack. Pi-hole, Tailscale, and monitoring built and managed for you — South Florida.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAV ============ -->
+<header class="nav">
+  <div class="nav-inner">
+    <div class="brand">WBN <span class="brand-sub">the Good Fellas</span></div>
+    <nav>
+      <a href="#stack">The Stack</a>
+      <a href="#services">Services</a>
+      <a href="#guide">Free Guide</a>
+      <a href="#newsletter">Newsletter</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ============ HERO (personalized) ============ -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <p class="eyebrow" data-personalize="eyebrow">South Florida · RVs, Homes &amp; Small Business</p>
+    <h1 data-personalize="headline">Your Home Network Is Probably Wide Open. Let's Fix That.</h1>
+    <p class="sub" data-personalize="subhead">
+      We design, build, and remotely monitor a locked-down home network — Pi-hole ad/threat
+      blocking, private VPN access, uptime monitoring — on one dedicated device. You buy the
+      hardware once. We handle everything else.
+    </p>
+    <div class="hero-ctas">
+      <a href="#guide" class="btn btn-primary" data-personalize="cta-primary" data-cta-id="primary">Get the Free Starter Guide</a>
+      <a href="#services" class="btn btn-ghost" data-personalize="cta-secondary" data-cta-id="secondary">See What We Build</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STAT STRIP ============ -->
+<section class="stats" id="stat-strip" data-track-section="stats">
+  <div class="stats-inner">
+    <div class="stat"><span class="stat-num">32</span><span class="stat-label">known vulnerabilities on the average home router</span></div>
+    <div class="stat"><span class="stat-num">17–21</span><span class="stat-label">connected devices in a typical smart home</span></div>
+    <div class="stat"><span class="stat-num">70x</span><span class="stat-label">a minute an exposed device gets probed</span></div>
+    <div class="stat"><span class="stat-num">4.9s</span><span class="stat-label">how often someone in the U.S. becomes an identity-theft victim</span></div>
+  </div>
+  <p class="stats-source">Sources: FBI IC3 2025, Security.org, StationX, Comparitech, Modemguides — full citations in the guide.</p>
+</section>
+
+<!-- ============ THE STACK ============ -->
+<section class="stack" id="stack" data-track-section="stack">
+  <h2>One Pi. Fully Managed.</h2>
+  <p class="section-sub">Every build runs the same hardened stack on a single dedicated Raspberry Pi in your home — you own the hardware, we own making it work.</p>
+  <div class="stack-grid">
+    <div class="stack-item"><h3>Pi-hole + Unbound</h3><p>Network-wide ad, tracker, and threat-domain blocking with your own recursive resolver — no third party sees your DNS queries.</p></div>
+    <div class="stack-item"><h3>Tailscale</h3><p>Private mesh VPN back into your home network from anywhere, with no port forwarding and no exposed attack surface.</p></div>
+    <div class="stack-item"><h3>Portainer</h3><p>Clean Docker container management so every service on the box stays organized and easy to update.</p></div>
+    <div class="stack-item"><h3>Uptime Kuma</h3><p>Centralized monitoring — we see if your device goes down before you do.</p></div>
+    <div class="stack-item"><h3>Vaultwarden</h3><p>Self-hosted password manager for the household, no subscription, no cloud vendor holding your vault.</p></div>
+    <div class="stack-item"><h3>Audit Reports</h3><p>Plain-English reports on what's connected, what's blocked, and what needs attention.</p></div>
+  </div>
+</section>
+
+<!-- ============ SERVICES (engagement-tracked tiles) ============ -->
+<section class="services" id="services">
+  <h2>Book the Build That Fits</h2>
+  <div class="service-grid">
+
+    <article class="service-card" data-track-section="starlink" data-engagement="starlink">
+      <h3>Connectivity Installs</h3>
+      <p>Starlink, cellular booster, and private network setup — dialed in for RVs and homes with unreliable service.</p>
+      <a href="#contact" class="service-cta" data-cta-target="starlink">Get a Connectivity Quote →</a>
+    </article>
+
+    <article class="service-card" data-track-section="security" data-engagement="security">
+      <h3>Home Network Lockdown</h3>
+      <p>The full single-Pi security stack installed and configured in your home, plus a written audit of what we found.</p>
+      <a href="#contact" class="service-cta" data-cta-target="security">Book a Security Audit →</a>
+    </article>
+
+    <article class="service-card" data-track-section="monitoring" data-engagement="monitoring">
+      <h3>Managed Monitoring</h3>
+      <p>Ongoing remote monitoring via Tailscale + Uptime Kuma — we watch it, you get a heads-up before something breaks.</p>
+      <a href="#contact" class="service-cta" data-cta-target="monitoring">Start Managed Monitoring →</a>
+    </article>
+
+  </div>
+  <p class="services-note">Upsell tier (not on the base Pi): VLAN segmentation, Suricata IDS/IPS, Frigate NVR, local LLM security assistant — covered when we scope your build.</p>
+</section>
+
+<!-- ============ PDF LEAD MAGNET ============ -->
+<section class="guide" id="guide" data-track-section="pdf">
+  <div class="guide-inner">
+    <div class="guide-copy">
+      <p class="eyebrow">Free Download</p>
+      <h2>The Complete Home Network Starter Stack</h2>
+      <p>The exact build we run for clients — Pi-hole, Unbound, Tailscale, Portainer, Uptime Kuma —
+        written so you can follow it yourself, plus the real numbers on why an unmanaged home
+        network is a liability. No fluff, no fear tactics, just the build.</p>
+      <ul class="guide-points">
+        <li>Full step-by-step Pi build, start to finish</li>
+        <li>What's worth doing yourself vs. what to book us for</li>
+        <li>Sourced stats you can actually check</li>
+      </ul>
+    </div>
+    <form class="guide-form" id="lead-form" data-form-kind="lead_magnet">
+      <label for="lead-email">Email address</label>
+      <input type="email" id="lead-email" name="email" placeholder="you@example.com" required>
+      <input type="hidden" name="form_kind" value="lead_magnet">
+      <button type="submit" class="btn btn-primary" id="lead-submit" data-personalize="cta-form">Send Me the Free Guide</button>
+      <p class="form-note">One email. The PDF, then occasional build tips. Unsubscribe anytime.</p>
+      <p class="form-success" id="lead-success" hidden>Check your inbox — the guide's on its way. <a href="#premium-upsell" id="premium-upsell-link">Want the expanded premium version?</a></p>
+    </form>
+  </div>
+
+  <div class="premium-upsell" id="premium-upsell" data-personalize="premium-block">
+    <p><strong>Already got the free guide?</strong> The premium edition adds the VLAN, IDS/IPS, and NVR builds, plus our client audit-report templates.</p>
+    <div class="premium-buy">
+      <input type="email" id="premium-email" placeholder="you@example.com" aria-label="Email for premium guide receipt">
+      <button type="button" class="btn btn-primary" id="premium-buy-btn">Buy the Premium Guide</button>
+    </div>
+    <p class="form-success" id="premium-success" hidden>Redirecting to secure checkout…</p>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER (separate pipeline) ============ -->
+<section class="newsletter" id="newsletter" data-track-section="newsletter">
+  <div class="newsletter-inner">
+    <h2>Home Network Intel</h2>
+    <p>A short, occasional newsletter on what's actually worth doing to your home network — no
+      product pitches, just the builds, the threats that matter, and what we're testing next.
+      Separate from the guide list; different pipeline, same brothers writing it.</p>
+    <form class="newsletter-form" id="newsletter-form" data-form-kind="newsletter">
+      <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
+      <input type="hidden" name="form_kind" value="newsletter">
+      <button type="submit" class="btn btn-ghost">Subscribe</button>
+    </form>
+    <p class="form-success" id="newsletter-success" hidden>You're in. First issue drops soon.</p>
+  </div>
+</section>
+
+<!-- ============ CONTACT / BOOK ============ -->
+<section class="contact" id="contact" data-track-section="contact">
+  <h2 data-personalize="contact-headline">Ready to Get Started?</h2>
+  <p data-personalize="contact-sub">Tell us what you're working with and what you want fixed — we'll follow up with a quote.</p>
+  <form class="contact-form" id="contact-form" data-form-kind="booking">
+    <input type="text" name="name" placeholder="Name" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <select name="interest" id="contact-interest">
+      <option value="starlink">Connectivity install (Starlink / booster)</option>
+      <option value="security">Home network lockdown / security audit</option>
+      <option value="monitoring">Managed monitoring</option>
+      <option value="other">Not sure yet</option>
+    </select>
+    <textarea name="details" placeholder="A little about your setup..."></textarea>
+    <input type="hidden" name="form_kind" value="booking">
+    <button type="submit" class="btn btn-primary">Request a Quote</button>
+  </form>
+  <p class="form-success" id="contact-success" hidden>Got it — we'll be in touch shortly.</p>
+</section>
+
+<footer class="footer">
+  <p>Woodley Brothers Networks — a DBA of Woodley Web Services LLC. Service area: Broward &amp; Miami-Dade, FL.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
