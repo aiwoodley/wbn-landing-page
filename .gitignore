@@ -4,3 +4,4 @@ data/*.jsonl
 .venv/
 .env
 .netlify/
+supabase/.temp/
