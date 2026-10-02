@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Onboarding | Woodley Solutions</title>
+<meta name="description" content="Onboarding for approved Woodley Solutions clients: business details, brand assets and account access, in one form.">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/">Woodley Solutions <span class="brand-sub">Client onboarding</span></a>
+    <nav><a href="/">Home</a><a href="/#contact" class="btn btn-primary">Free audit</a></nav>
+  </div>
+</header>
+
+<section class="ob-hero">
+  <div class="wrap" style="max-width:860px">
+    <p class="eyebrow">You approved a proposal. Welcome aboard.</p>
+    <h1>Client onboarding</h1>
+    <p class="section-sub" style="margin-bottom:18px">This one form gives us everything we need to start the build. It takes about 15 minutes. If you don't know an answer yet, skip it and we'll cover it on the kickoff call.</p>
+    <div class="warnbox"><strong>Never send us a password.</strong> Not in this form, not by text or email. Every account below is shared by adding us as a manager or partner, and you can remove us at any time.</div>
+  </div>
+</section>
+
+<section style="padding-top:12px">
+  <div class="wrap" style="max-width:860px">
+    <form class="form-card" id="onboard-form" name="client-onboarding" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="company_website" style="max-width:none" novalidate>
+      <input type="hidden" name="form-name" value="client-onboarding">
+      <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="company_website" tabindex="-1" autocomplete="off"></label></div>
+
+      <div class="ob-section">
+        <h2><span class="n">1</span>Business details</h2>
+        <p class="small">These must match exactly everywhere online, because mismatched details hurt your map ranking.</p>
+        <div class="form-grid">
+          <div><label for="o-business">Business name, exactly as it should appear</label><input id="o-business" name="business_name" type="text" required></div>
+          <div><label for="o-legal">Legal entity name <span class="opt">(if different)</span></label><input id="o-legal" name="legal_name" type="text" placeholder="Example Holdings LLC"></div>
+          <div class="full"><label for="o-address">Public address, including suite or unit</label><input id="o-address" name="address" type="text" required></div>
+          <div><label for="o-phone">Public phone number</label><input id="o-phone" name="public_phone" type="tel" required></div>
+          <div><label for="o-pemail">Public email <span class="opt">(optional)</span></label><input id="o-pemail" name="public_email" type="email"></div>
+          <div class="full"><label for="o-hours">Hours, by day</label><textarea id="o-hours" name="hours" required placeholder="Mon–Thu 6pm–2am, Fri–Sat 6pm–4am, Sun closed"></textarea></div>
+          <div class="full"><label for="o-desc">Describe the business in two or three sentences</label><textarea id="o-desc" name="description" required placeholder="What you offer, who it's for, and what makes it different"></textarea></div>
+          <div class="full"><label for="o-other">Has another business used this address or this name? <span class="opt">(Important for map listings)</span></label>
+            <select id="o-other" name="address_history">
+              <option value="">Choose one</option>
+              <option>No, we're the only business at this address</option>
+              <option>Yes, this is a rebrand of a previous business we own</option>
+              <option>Yes, a separate business shares or used this address</option>
+              <option>Not sure</option>
+            </select></div>
+          <div class="full"><label for="o-other-detail">If yes, give the other business's name and what the relationship is</label><input id="o-other-detail" name="address_history_detail" type="text"></div>
+        </div>
+      </div>
+
+      <div class="ob-section">
+        <h2><span class="n">2</span>Your contacts</h2>
+        <div class="form-grid">
+          <div><label for="o-name">Primary contact name</label><input id="o-name" name="name" type="text" required autocomplete="name"></div>
+          <div><label for="o-email">Primary contact email</label><input id="o-email" name="email" type="email" required autocomplete="email"></div>
+          <div><label for="o-cphone">Primary contact cell</label><input id="o-cphone" name="contact_phone" type="tel" required autocomplete="tel"></div>
+          <div><label for="o-pref">Best way to reach you</label>
+            <select id="o-pref" name="contact_pref"><option>Text</option><option>Call</option><option>Email</option></select></div>
+          <div class="full"><label for="o-approver">Who approves designs and posts before they go live? <span class="opt">(name, if not you)</span></label><input id="o-approver" name="approver" type="text"></div>
+        </div>
+      </div>
+
+      <div class="ob-section">
+        <h2><span class="n">3</span>Brand and content</h2>
+        <div class="howto">Put everything in one shared folder (Google Drive, Dropbox or iCloud) and paste the link below. Include whatever you have:
+          <ol><li>Logo files (the highest quality you have)</li><li>Menu or service list with prices</li><li>15 to 30 photos and short clips: the space, products, team, customers (with their OK)</li><li>Packages, VIP tiers or specials you want promoted</li></ol></div>
+        <div class="form-grid">
+          <div class="full"><label for="o-folder">Shared folder link</label><input id="o-folder" name="assets_folder" type="text" placeholder="https://drive.google.com/..."></div>
+          <div><label for="o-colors">Brand colors or fonts <span class="opt">(optional)</span></label><input id="o-colors" name="brand_colors" type="text" placeholder="Black and gold, or 'match our Instagram'"></div>
+          <div><label for="o-domain">Domain you want <span class="opt">(or the one you own)</span></label><input id="o-domain" name="domain" type="text" placeholder="yourbusiness.com"></div>
+          <div class="full"><label for="o-like">Websites or pages you like the look of <span class="opt">(optional)</span></label><input id="o-like" name="inspiration" type="text"></div>
+          <div class="full"><label for="o-social">Your current social accounts</label><input id="o-social" name="social" type="text" placeholder="Instagram @..., Facebook page link, TikTok @..."></div>
+        </div>
+      </div>
+
+      <div class="ob-section">
+        <h2><span class="n">4</span>Account access</h2>
+        <p class="small">Check each one once you've done it, or mark it for the kickoff call. We'll send you our exact invite addresses and Business ID by email after this form arrives.</p>
+
+        <div class="access-item"><h3>Google Business Profile</h3>
+          <p class="small" style="margin:0 0 8px">In Google Business Profile: <strong>Menu → Business Profile settings → Managers → Add</strong>, then enter the email we send you, with the role <strong>Manager</strong>. If you don't have a profile yet, we'll create it with you.</p>
+          <select name="access_google" aria-label="Google Business Profile access"><option value="">Status</option><option>Done: added you as Manager</option><option>No profile yet, help me create it</option><option>Do it together on the kickoff call</option></select></div>
+
+        <div class="access-item"><h3>Meta (Facebook and Instagram)</h3>
+          <p class="small" style="margin:0 0 8px">In Meta Business Suite: <strong>Settings → Partners → Add a partner</strong>, enter our Business ID, and give access to your Page, Instagram account and Ad account. If you don't have a Business Suite yet, we'll help you create one in your name.</p>
+          <select name="access_meta" aria-label="Meta access"><option value="">Status</option><option>Done: added you as Partner</option><option>No Business Suite yet, help me create it</option><option>Do it together on the kickoff call</option></select></div>
+
+        <div class="access-item"><h3>Domain</h3>
+          <p class="small" style="margin:0 0 8px">If you already own one, invite us as a delegate user at your registrar (GoDaddy, Namecheap, Google/Squarespace). If not, we register it in your name.</p>
+          <select name="access_domain" aria-label="Domain access"><option value="">Status</option><option>I own a domain, invite sent</option><option>Please register one in my name</option><option>Do it together on the kickoff call</option></select></div>
+
+        <div class="access-item"><h3>Payments for deposits (Stripe or Square)</h3>
+          <p class="small" style="margin:0 0 8px">Deposits go straight to your own account. Invite us as a team member with limited access so we can set up payment links. We never see your bank details.</p>
+          <select name="access_payments" aria-label="Payments access"><option value="">Status</option><option>Stripe, invite sent</option><option>Square, invite sent</option><option>No payment account yet</option><option>We don't need deposits</option></select></div>
+
+        <div class="access-item"><h3>Other platforms <span class="opt">(Apple Business Connect, Yelp, TikTok, booking apps)</span></h3>
+          <input name="access_other" type="text" placeholder="List any you already have. We'll invite ourselves or set them up with you."></div>
+      </div>
+
+      <div class="ob-section">
+        <h2><span class="n">5</span>Customers and marketing</h2>
+        <div class="form-grid">
+          <div class="full"><label for="o-booking">How do customers book or order today?</label><input id="o-booking" name="booking_today" type="text" placeholder="DMs, phone, walk-ins, an app"></div>
+          <div class="full"><label for="o-list">Do you already have a customer phone or email list?</label>
+            <select id="o-list" name="existing_list">
+              <option value="">Choose one</option>
+              <option>No list yet</option>
+              <option>Yes, and they agreed in writing to get texts or emails from us</option>
+              <option>Yes, but I'm not sure they agreed to marketing</option>
+            </select>
+            <p class="small" style="margin-top:6px">Florida law requires written consent before sending marketing texts. We'll only text customers who opted in, and we'll set up a compliant sign-up.</p></div>
+          <div class="full"><label for="o-partners">Promoters, DJs, partners or influencers who bring you customers <span class="opt">(optional)</span></label><input id="o-partners" name="partners" type="text" placeholder="Names and @handles"></div>
+          <div class="full"><label for="o-age">Is your business or any product age-restricted?</label>
+            <select id="o-age" name="age_restricted"><option value="">Choose one</option><option>No</option><option>Yes, 18+</option><option>Yes, 21+</option></select>
+            <p class="small" style="margin-top:6px">This affects what ads can run. Some categories, like tobacco, hookah and vaping, can't be advertised on Meta or Google.</p></div>
+          <div class="full"><label for="o-goals">What would make the first 90 days a win for you?</label><textarea id="o-goals" name="goals_90" placeholder="More bookings, more reviews, a full calendar on slow nights..."></textarea></div>
+        </div>
+      </div>
+
+      <div class="ob-section">
+        <h2><span class="n">6</span>Kickoff call</h2>
+        <div class="form-grid">
+          <div><label for="o-date">Preferred day</label><input id="o-date" name="kickoff_date" type="date"></div>
+          <div><label for="o-time">Preferred time</label><select id="o-time" name="kickoff_time"><option>Morning</option><option>Afternoon</option><option>Evening</option></select></div>
+          <div class="full"><label for="o-notes">Anything else? <span class="opt">(optional)</span></label><textarea id="o-notes" name="notes"></textarea></div>
+          <div class="full"><label class="check"><input type="checkbox" name="consent_no_passwords" value="yes" required>I understand Woodley Solutions will never ask for my passwords, and that I keep ownership of every account, listing and customer list.</label></div>
+        </div>
+      </div>
+
+      <div style="margin-top:26px"><button type="submit" class="btn btn-primary">Submit onboarding</button></div>
+      <div class="form-status" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div><p><strong style="color:#fff">Woodley Solutions LLC</strong></p><p>Miramar, Florida</p></div>
+    <div><p><a href="mailto:info@woodleysolutions.tech">info@woodleysolutions.tech</a></p></div>
+  </div>
+</footer>
+
+<script src="/script.js"></script>
+</body>
+</html>

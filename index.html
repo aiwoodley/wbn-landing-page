@@ -3,170 +3,234 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Woodley Solutions | Home Network &amp; Security Builds</title>
-<meta name="description" content="Free guide: The Complete Home Network Starter Stack. Pi-hole, Tailscale, and monitoring built and managed for you — South Florida.">
-<link rel="stylesheet" href="style.css">
+<title>Woodley Solutions | Websites, Google Listings, Booking &amp; AI for South Florida Businesses</title>
+<meta name="description" content="Get found, get booked, and keep your customers. Woodley Solutions builds websites, map listings, booking flows, social setup and AI follow-up for South Florida local businesses. Start with a free Digital Footprint Audit.">
+<meta property="og:title" content="Woodley Solutions | Free Digital Footprint Audit">
+<meta property="og:description" content="See exactly where your business stands online, scored category by category, before you spend a dollar.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Woodley Solutions","description":"Websites, Google Business Profile and map listings, booking and deposits, social media setup, ads setup and AI automation for local businesses.","areaServed":["Miramar, FL","Broward County, FL","Miami-Dade County, FL"],"email":"info@woodleysolutions.tech","address":{"@type":"PostalAddress","addressLocality":"Miramar","addressRegion":"FL","addressCountry":"US"}}
+</script>
 </head>
 <body>
 
-<!-- ============ NAV ============ -->
 <header class="nav">
   <div class="nav-inner">
-    <div class="brand">Woodley Solutions <span class="brand-sub">Home Network &amp; Security</span></div>
+    <a class="brand" href="/">Woodley Solutions <span class="brand-sub">Web · Listings · Booking · AI</span></a>
     <nav>
-      <a href="#stack">The Stack</a>
+      <a href="#how">How it works</a>
       <a href="#services">Services</a>
-      <a href="#guide">Free Guide</a>
-      <a href="#newsletter">Newsletter</a>
+      <a href="#audit">The audit</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn-primary">Get a free audit</a>
     </nav>
   </div>
 </header>
 
-<!-- ============ HERO (personalized) ============ -->
-<section class="hero" id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-content">
-    <p class="eyebrow" data-personalize="eyebrow">South Florida · RVs, Homes &amp; Small Business</p>
-    <h1 data-personalize="headline">Your Home Network Is Probably Wide Open. Let's Fix That.</h1>
-    <p class="sub" data-personalize="subhead">
-      We design, build, and remotely monitor a locked-down home network — Pi-hole ad/threat
-      blocking, private VPN access, uptime monitoring — on one dedicated device. You buy the
-      hardware once. We handle everything else.
-    </p>
-    <div class="hero-ctas">
-      <a href="#guide" class="btn btn-primary" data-personalize="cta-primary" data-cta-id="primary">Get the Free Starter Guide</a>
-      <a href="#services" class="btn btn-ghost" data-personalize="cta-secondary" data-cta-id="secondary">See What We Build</a>
-    </div>
-  </div>
-</section>
-
-<!-- ============ STAT STRIP ============ -->
-<section class="stats" id="stat-strip" data-track-section="stats">
-  <div class="stats-inner">
-    <div class="stat"><span class="stat-num">32</span><span class="stat-label">known vulnerabilities on the average home router</span></div>
-    <div class="stat"><span class="stat-num">17–21</span><span class="stat-label">connected devices in a typical smart home</span></div>
-    <div class="stat"><span class="stat-num">70x</span><span class="stat-label">a minute an exposed device gets probed</span></div>
-    <div class="stat"><span class="stat-num">4.9s</span><span class="stat-label">how often someone in the U.S. becomes an identity-theft victim</span></div>
-  </div>
-  <p class="stats-source">Sources: FBI IC3 2025, Security.org, StationX, Comparitech, Modemguides — full citations in the guide.</p>
-</section>
-
-<!-- ============ THE STACK ============ -->
-<section class="stack" id="stack" data-track-section="stack">
-  <h2>One Pi. Fully Managed.</h2>
-  <p class="section-sub">Every build runs the same hardened stack on a single dedicated Raspberry Pi in your home — you own the hardware, we own making it work.</p>
-  <div class="stack-grid">
-    <div class="stack-item"><h3>Pi-hole + Unbound</h3><p>Network-wide ad, tracker, and threat-domain blocking with your own recursive resolver — no third party sees your DNS queries.</p></div>
-    <div class="stack-item"><h3>Tailscale</h3><p>Private mesh VPN back into your home network from anywhere, with no port forwarding and no exposed attack surface.</p></div>
-    <div class="stack-item"><h3>Portainer</h3><p>Clean Docker container management so every service on the box stays organized and easy to update.</p></div>
-    <div class="stack-item"><h3>Uptime Kuma</h3><p>Centralized monitoring — we see if your device goes down before you do.</p></div>
-    <div class="stack-item"><h3>Vaultwarden</h3><p>Self-hosted password manager for the household, no subscription, no cloud vendor holding your vault.</p></div>
-    <div class="stack-item"><h3>Audit Reports</h3><p>Plain-English reports on what's connected, what's blocked, and what needs attention.</p></div>
-  </div>
-</section>
-
-<!-- ============ SERVICES (engagement-tracked tiles) ============ -->
-<section class="services" id="services">
-  <h2>Book the Build That Fits</h2>
-  <div class="service-grid">
-
-    <article class="service-card" data-track-section="starlink" data-engagement="starlink">
-      <h3>Connectivity Installs</h3>
-      <p>Starlink, cellular booster, and private network setup — dialed in for RVs and homes with unreliable service.</p>
-      <a href="#contact" class="service-cta" data-cta-target="starlink">Get a Connectivity Quote →</a>
-    </article>
-
-    <article class="service-card" data-track-section="security" data-engagement="security">
-      <h3>Home Network Lockdown</h3>
-      <p>The full single-Pi security stack installed and configured in your home, plus a written audit of what we found.</p>
-      <a href="#contact" class="service-cta" data-cta-target="security">Book a Security Audit →</a>
-    </article>
-
-    <article class="service-card" data-track-section="monitoring" data-engagement="monitoring">
-      <h3>Managed Monitoring</h3>
-      <p>Ongoing remote monitoring via Tailscale + Uptime Kuma — we watch it, you get a heads-up before something breaks.</p>
-      <a href="#contact" class="service-cta" data-cta-target="monitoring">Start Managed Monitoring →</a>
-    </article>
-
-  </div>
-  <p class="services-note">Upsell tier (not on the base Pi): VLAN segmentation, Suricata IDS/IPS, Frigate NVR, local LLM security assistant — covered when we scope your build.</p>
-</section>
-
-<!-- ============ PDF LEAD MAGNET ============ -->
-<section class="guide" id="guide" data-track-section="pdf">
-  <div class="guide-inner">
-    <div class="guide-copy">
-      <p class="eyebrow">Free Download</p>
-      <h2>The Complete Home Network Starter Stack</h2>
-      <p>22 pages, step by step: Pi-hole, Unbound, Docker + Portainer, chrony, Tailscale, and
-        Uptime Kuma — the exact build we run for clients, written so you can follow it
-        yourself. Guide 1 of 4 in the Home Network Series.</p>
-      <ul class="guide-points">
-        <li>Full step-by-step Pi build, start to finish — ~3-4 hours</li>
-        <li>Troubleshooting appendix for the snags people actually hit</li>
-        <li>What's worth doing yourself vs. what to book us for</li>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow">For South Florida local businesses</p>
+      <h1>Get found, get booked, and keep your customers.</h1>
+      <p class="sub">We build the website, map listings, booking flow and social setup a local business needs, then set up AI tools to handle the follow-up. It starts with a free Digital Footprint Audit, so you see where you stand before you spend anything.</p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn btn-primary">Get my free audit</a>
+        <a href="#how" class="btn btn-ghost">See how it works</a>
+      </div>
+      <ul class="trust">
+        <li>Free, no obligation</li>
+        <li>You own every account</li>
+        <li>We never ask for passwords</li>
       </ul>
     </div>
-    <form class="guide-form" id="lead-form" data-form-kind="lead_magnet">
-      <label for="lead-email">Email address</label>
-      <input type="email" id="lead-email" name="email" placeholder="you@example.com" required>
-      <input type="hidden" name="form_kind" value="lead_magnet">
-      <button type="submit" class="btn btn-primary" id="lead-submit" data-personalize="cta-form">Send Me the Free Guide</button>
-      <p class="form-note">One email. The PDF, then occasional build tips. Unsubscribe anytime.</p>
-      <p class="form-success" id="lead-success" hidden>Check your inbox — the guide's on its way. <a href="#premium-upsell" id="premium-upsell-link">Want the expanded premium version?</a></p>
-    </form>
-  </div>
 
-  <div class="premium-upsell" id="premium-upsell" data-personalize="premium-block">
-    <p><strong>Already got the free guide?</strong> The premium edition adds the VLAN, IDS/IPS, and NVR builds, plus our client audit-report templates.</p>
-    <div class="premium-buy">
-      <input type="email" id="premium-email" placeholder="you@example.com" aria-label="Email for premium guide receipt">
-      <button type="button" class="btn btn-primary" id="premium-buy-btn">Buy the Premium Guide</button>
+    <div class="scorecard" aria-label="Example audit scorecard">
+      <div class="scorecard-head"><strong>Digital Footprint Scorecard</strong><span class="tag">Sample</span></div>
+      <p class="small" style="margin-bottom:10px">Example scores for a neighborhood restaurant, 0 to 10</p>
+      <div class="score-row"><span>Search &amp; maps</span><div class="bar"><span class="low" style="width:10%"></span></div><b>1.0</b></div>
+      <div class="score-row"><span>Website</span><div class="bar"><span class="low" style="width:5%"></span></div><b>0.5</b></div>
+      <div class="score-row"><span>Reviews</span><div class="bar"><span class="low" style="width:20%"></span></div><b>2.0</b></div>
+      <div class="score-row"><span>Social presence</span><div class="bar"><span style="width:60%"></span></div><b>6.0</b></div>
+      <div class="score-row"><span>Booking &amp; conversion</span><div class="bar"><span class="low" style="width:25%"></span></div><b>2.5</b></div>
+      <div class="score-row"><span>Customer list</span><div class="bar"><span class="low" style="width:10%"></span></div><b>1.0</b></div>
+      <div class="overall"><span><strong>Overall readiness</strong><br>Strong social, nowhere for it to go</span><b>2.2</b></div>
     </div>
-    <p class="form-success" id="premium-success" hidden>Redirecting to secure checkout…</p>
   </div>
 </section>
 
-<!-- ============ NEWSLETTER (separate pipeline) ============ -->
-<section class="newsletter" id="newsletter" data-track-section="newsletter">
-  <div class="newsletter-inner">
-    <h2>Home Network Intel</h2>
-    <p>A short, occasional newsletter on what's actually worth doing to your home network — no
-      product pitches, just the builds, the threats that matter, and what we're testing next.
-      Separate from the guide list; different pipeline, same team writing it.</p>
-    <form class="newsletter-form" id="newsletter-form" data-form-kind="newsletter">
-      <input type="email" id="newsletter-email" name="email" placeholder="you@example.com" required>
-      <input type="hidden" name="form_kind" value="newsletter">
-      <button type="submit" class="btn btn-ghost">Subscribe</button>
+<!-- PROBLEMS -->
+<section class="alt">
+  <div class="wrap">
+    <p class="eyebrow">What we usually find</p>
+    <h2>Most local businesses have customers. They just don't own the path to them.</h2>
+    <p class="section-sub">A busy Instagram, word of mouth, a promoter who fills the room. Then a customer searches for you, and the trail goes cold.</p>
+    <div class="grid-3">
+      <div class="card"><span class="icon">📍</span><h3>Not on the map</h3><p>No Google, Apple Maps or Waze listing, or one with the wrong name, hours or phone.</p></div>
+      <div class="card"><span class="icon">🔗</span><h3>No home base</h3><p>No website, and no single link that holds your menu or services, hours, booking and directions.</p></div>
+      <div class="card"><span class="icon">💬</span><h3>Booking lives in DMs</h3><p>Reservations and quotes get lost in messages. No deposit, no confirmation, no follow-up.</p></div>
+      <div class="card"><span class="icon">⭐</span><h3>Few or no reviews</h3><p>Reviews drive map ranking and trust. Without a simple way to ask for them, they don't come in.</p></div>
+      <div class="card"><span class="icon">📇</span><h3>No customer list</h3><p>Customers walk out without leaving a phone number or email, so there's no way to bring them back.</p></div>
+      <div class="card"><span class="icon">⏱️</span><h3>Everything is manual</h3><p>Answering the same questions, confirming bookings, chasing reviews. AI and automation can take that work off your plate.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="wrap">
+    <p class="eyebrow">How it works</p>
+    <h2>From first form to launch in about a month</h2>
+    <p class="section-sub">You approve everything before the public sees it, and nothing is billed until you've seen the audit and said yes to a proposal.</p>
+    <ol class="steps">
+      <li><span class="when">2 minutes</span><h3>Request your free audit</h3><p>Tell us about the business with the short form below. No payment info, no passwords.</p></li>
+      <li><span class="when">Within 3 business days</span><h3>Get your scorecard</h3><p>We check your listings, website, reviews, social and booking setup, score each one, and walk you through it.</p></li>
+      <li><span class="when">After the walkthrough</span><h3>Fixed-price proposal</h3><p>A written proposal for only what the audit says you need, priced per service. Approve it and fill out one onboarding form.</p></li>
+      <li><span class="when">About 3 to 4 weeks</span><h3>We build and launch</h3><p>Website, listings, booking, social and ads setup. Then optional monthly care keeps it running.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Services</p>
+    <h2>The foundation build</h2>
+    <p class="section-sub">Pick the pieces the audit says you need, or bundle all of them. Every account is created in your business's name.</p>
+    <div class="grid-3">
+      <div class="card svc"><h3>Website + link-in-bio hub</h3><p>A mobile-first site on your own domain that doubles as the one link for your bio, flyers and promoters.</p>
+        <ul><li>Menu or services, hours, events, booking, directions</li><li>Local SEO basics so Google can index it</li><li>Analytics to see which links bring people in</li></ul></div>
+      <div class="card svc"><h3>Maps, listings &amp; reviews</h3><p>Show up when someone searches your name or "near me."</p>
+        <ul><li>Google Business Profile, Apple Maps, Waze</li><li>Yelp, Bing Places, TripAdvisor where relevant</li><li>Same name, address and phone everywhere</li><li>QR review cards and a staff script</li></ul></div>
+      <div class="card svc"><h3>Booking, deposits &amp; customer capture</h3><p>Move bookings out of the DMs.</p>
+        <ul><li>Reservation or quote form with automatic confirmation</li><li>Deposit links through your own Stripe or Square</li><li>Text and email opt-in with consent wording that follows Florida and federal law</li></ul></div>
+      <div class="card svc"><h3>Social media setup</h3><p>Profiles that send people somewhere.</p>
+        <ul><li>Instagram, Facebook and TikTok cleanup</li><li>Branded templates for weekly posts and events</li><li>Partner and promoter kit with tracked links</li></ul></div>
+      <div class="card svc"><h3>Ads account setup</h3><p>Ready to advertise without getting flagged.</p>
+        <ul><li>Meta Business Portfolio, ad account and pixel</li><li>Conversion tracking for bookings and sign-ups</li><li>Local audiences and a first campaign that follows platform policy</li></ul></div>
+      <div class="card svc"><h3>AI &amp; automation</h3><p>Less time on repeat work.</p>
+        <ul><li>DM keyword auto-replies that send the booking link</li><li>Booking confirmations and reminders</li><li>Drafted review replies for you to approve</li><li>Follow-up texts, only to customers who opted in</li></ul></div>
+    </div>
+
+    <div class="plans">
+      <h2 style="font-size:26px">Optional monthly care</h2>
+      <p class="section-sub" style="margin-bottom:24px">After launch, we can keep it all running. Plans go month to month after a short minimum.</p>
+      <div class="grid-3">
+        <div class="plan"><h3>Essentials</h3><ul><li>Hosting and site updates</li><li>Weekly Google posts</li><li>Replies to every review</li><li>Monthly report</li></ul></div>
+        <div class="plan featured"><h3>Growth</h3><ul><li>Everything in Essentials</li><li>4 to 5 social posts a week</li><li>Weekly lineup or promo graphic</li><li>Text and email campaigns to your list</li></ul></div>
+        <div class="plan"><h3>Growth + Ads</h3><ul><li>Everything in Growth</li><li>Ad creative, targeting and weekly tuning</li><li>Ad spend paid directly to the platform</li></ul></div>
+      </div>
+      <p class="price-note"><strong>What does it cost?</strong> It depends on what the audit finds, so pricing comes in your proposal: a fixed price per service, no surprise fees. Third-party costs like your domain, texting platform and ad spend are billed to you directly.</p>
+    </div>
+  </div>
+</section>
+
+<!-- THE AUDIT -->
+<section id="audit">
+  <div class="wrap">
+    <p class="eyebrow">The free Digital Footprint Audit</p>
+    <h2>A clear picture of where your business stands, online and operationally</h2>
+    <p class="section-sub">We look at your business the way a new customer would, from the first search to the booking, and score every step from 0 to 10.</p>
+    <div class="audit-cols">
+      <div class="card"><h3>Your digital footprint</h3>
+        <ul><li>Search and maps: Google, Apple Maps, Waze</li><li>Website or landing page</li><li>Reviews and reputation on every platform</li><li>Social presence and content</li><li>Brand consistency: name, address, phone, look</li><li>Ads readiness and platform policy fit</li></ul></div>
+      <div class="card"><h3>How you operate</h3>
+        <ul><li>How customers book, order or request a quote</li><li>Deposits and payments</li><li>Customer list and follow-up</li><li>Response time and repeat questions</li><li>Dependence on one person, promoter or channel</li><li>Where AI or automation would save real hours</li></ul></div>
+    </div>
+    <h3 style="margin-top:8px">What you get</h3>
+    <ol class="deliverables">
+      <li><strong>Scorecard</strong>A 0 to 10 score per category, plus an overall readiness score</li>
+      <li><strong>Verdict</strong>How much help you actually need, in plain English</li>
+      <li><strong>Top 5 findings</strong>The biggest gaps, each with the evidence</li>
+      <li><strong>Channel by channel</strong>The status of every platform and the fix for each</li>
+      <li><strong>30/60/90-day plan</strong>What to do first, and how you'll know it worked</li>
+    </ol>
+    <p class="small" style="margin-top:18px">The audit uses public information only: search, maps, your public profiles and your site. Some items, like ad account history or Instagram insights, need owner access, so we mark those as unverified.</p>
+  </div>
+</section>
+
+<!-- AUDIT REQUEST FORM -->
+<section id="contact" class="alt">
+  <div class="wrap">
+    <p class="eyebrow">Start here</p>
+    <h2>Request your free audit</h2>
+    <p class="section-sub">Takes about 2 minutes. We'll email your scorecard and set up a short walkthrough call.</p>
+
+    <form class="form-card" id="audit-form" name="audit-request" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="company_website" novalidate>
+      <input type="hidden" name="form-name" value="audit-request">
+      <input type="hidden" name="goals" value="">
+      <div class="hp" aria-hidden="true"><label>Leave this empty<input type="text" name="company_website" tabindex="-1" autocomplete="off"></label></div>
+      <div class="form-grid">
+        <div><label for="a-business">Business name</label><input id="a-business" name="business_name" type="text" required autocomplete="organization"></div>
+        <div><label for="a-type">Type of business</label>
+          <select id="a-type" name="business_type" required>
+            <option value="">Choose one</option>
+            <option>Restaurant, bar or lounge</option>
+            <option>Salon, barber, spa or med spa</option>
+            <option>Home services (roofing, HVAC, cleaning, landscaping)</option>
+            <option>Auto (detailing, repair, sales)</option>
+            <option>Retail or e-commerce</option>
+            <option>Fitness or wellness</option>
+            <option>Professional services</option>
+            <option>Events or entertainment</option>
+            <option value="Home network install">Home network install (not a business audit)</option>
+            <option>Other</option>
+          </select></div>
+        <div><label for="a-name">Your name</label><input id="a-name" name="name" type="text" required autocomplete="name"></div>
+        <div><label for="a-role">Your role <span class="opt">(optional)</span></label><input id="a-role" name="role" type="text" placeholder="Owner, manager, partner"></div>
+        <div><label for="a-email">Email</label><input id="a-email" name="email" type="email" required autocomplete="email"></div>
+        <div><label for="a-phone">Phone <span class="opt">(optional)</span></label><input id="a-phone" name="phone" type="tel" autocomplete="tel"></div>
+        <div class="full"><label for="a-address">Business address or service area</label><input id="a-address" name="address" type="text" required placeholder="Street address, or the cities you serve"></div>
+        <div><label for="a-site">Website <span class="opt">(if you have one)</span></label><input id="a-site" name="website" type="text" placeholder="yourbusiness.com"></div>
+        <div><label for="a-social">Instagram, Facebook or TikTok <span class="opt">(optional)</span></label><input id="a-social" name="social" type="text" placeholder="@yourbusiness"></div>
+        <div class="full"><label for="a-other">Other names this business has used, or shares an address with <span class="opt">(optional)</span></label><input id="a-other" name="other_names" type="text" placeholder="Old name, previous business at this address, sister location"></div>
+        <fieldset class="full"><legend>What do you want help with? <span class="opt">(pick any)</span></legend>
+          <div class="checks">
+            <label class="check"><input type="checkbox" name="goal_opt" value="Getting found on Google and maps">Getting found on Google and maps</label>
+            <label class="check"><input type="checkbox" name="goal_opt" value="A website or one link for everything">A website or one link for everything</label>
+            <label class="check"><input type="checkbox" name="goal_opt" value="Bookings out of DMs and phone calls">Bookings out of DMs and phone calls</label>
+            <label class="check"><input type="checkbox" name="goal_opt" value="More reviews">More reviews</label>
+            <label class="check"><input type="checkbox" name="goal_opt" value="Social media that brings in customers">Social media that brings in customers</label>
+            <label class="check"><input type="checkbox" name="goal_opt" value="Running ads">Running ads</label>
+            <label class="check"><input type="checkbox" name="goal_opt" value="Building a customer list">Building a customer list</label>
+            <label class="check"><input type="checkbox" name="goal_opt" value="AI and automation to save time">AI and automation to save time</label>
+          </div></fieldset>
+        <div class="full"><label for="a-book">How do customers book, order or contact you today? <span class="opt">(optional)</span></label><input id="a-book" name="booking_today" type="text" placeholder="Instagram DMs, phone, walk-ins, a booking app..."></div>
+        <div class="full"><label for="a-notes">Anything else we should know? <span class="opt">(optional)</span></label><textarea id="a-notes" name="notes"></textarea></div>
+        <div><label for="a-ref">How did you hear about us? <span class="opt">(optional)</span></label><input id="a-ref" name="referral" type="text" placeholder="Name of who referred you"></div>
+        <div class="full"><label class="check"><input type="checkbox" name="consent_contact" value="yes" required>It's OK to contact me by email or phone about my audit. You won't be added to any marketing list.</label></div>
+      </div>
+      <div style="margin-top:22px"><button type="submit" class="btn btn-primary">Request my free audit</button></div>
+      <div class="form-status" role="status" aria-live="polite"></div>
     </form>
-    <p class="form-success" id="newsletter-success" hidden>You're in. First issue drops soon.</p>
+    <p class="small" style="margin-top:16px">Already approved a proposal? <a href="/start/">Go to client onboarding →</a></p>
   </div>
 </section>
 
-<!-- ============ CONTACT / BOOK ============ -->
-<section class="contact" id="contact" data-track-section="contact">
-  <h2 data-personalize="contact-headline">Ready to Get Started?</h2>
-  <p data-personalize="contact-sub">Tell us what you're working with and what you want fixed — we'll follow up with a quote.</p>
-  <form class="contact-form" id="contact-form" data-form-kind="booking">
-    <input type="text" name="name" placeholder="Name" required>
-    <input type="email" name="email" placeholder="Email" required>
-    <select name="interest" id="contact-interest">
-      <option value="starlink">Connectivity install (Starlink / booster)</option>
-      <option value="security">Home network lockdown / security audit</option>
-      <option value="monitoring">Managed monitoring</option>
-      <option value="other">Not sure yet</option>
-    </select>
-    <textarea name="details" placeholder="A little about your setup..."></textarea>
-    <input type="hidden" name="form_kind" value="booking">
-    <button type="submit" class="btn btn-primary">Request a Quote</button>
-  </form>
-  <p class="form-success" id="contact-success" hidden>Got it — we'll be in touch shortly.</p>
+<!-- FAQ -->
+<section id="faq">
+  <div class="wrap" style="max-width:820px">
+    <p class="eyebrow">FAQ</p>
+    <h2>Questions owners ask</h2>
+    <details><summary>Is the audit really free?</summary><p>Yes. No payment info, no contract. If the audit shows you don't need us, we'll tell you.</p></details>
+    <details><summary>Do you need my passwords?</summary><p>No. You add us as a manager or partner on Google, Meta and your payment processor, and you can remove us any time. Accounts stay in your name.</p></details>
+    <details><summary>Who owns the website, listings and customer list?</summary><p>You do. If you ever stop working with us, we hand everything over, including a copy of the site.</p></details>
+    <details><summary>How long does it take?</summary><p>The audit takes up to 3 business days. A full foundation build usually takes 3 to 4 weeks. Google sets its own timing for verifying listings, which can add a few days.</p></details>
+    <details><summary>Can you run ads for any business?</summary><p>Not always. Meta and Google restrict ads for some categories, like tobacco and hookah, cannabis, firearms and some health services. The audit tells you what's allowed for your business and what we'd do instead.</p></details>
+    <details><summary>What does "AI and automation" actually mean here?</summary><p>Practical things: auto-replies that send your booking link, automatic confirmations and reminders, drafted review replies you approve, and follow-up messages to customers who opted in. Nothing posts or sends without rules you've signed off on.</p></details>
+  </div>
 </section>
 
-<footer class="footer">
-  <p>Woodley Solutions — Home Network &amp; Security. Service area: Broward &amp; Miami-Dade, FL.</p>
+<div class="also"><div class="wrap">Also from Woodley Solutions: home network setup for homes, RVs and small offices. <a href="#contact" data-network-link>Ask about a network install →</a></div></div>
+
+<footer>
+  <div class="wrap foot">
+    <div><p><strong style="color:#fff">Woodley Solutions LLC</strong></p><p>Miramar, Florida · Serving Broward and Miami-Dade</p></div>
+    <div><p><a href="mailto:info@woodleysolutions.tech">info@woodleysolutions.tech</a></p><p><a href="/start/">Client onboarding</a></p></div>
+  </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="/script.js"></script>
 </body>
 </html>

@@ -1,3 +1,15 @@
+# Woodley Solutions — Website
+
+**Current version (Oct 2026):** local web services site. Free Digital Footprint Audit intake
+(`/#contact`, Netlify Form `audit-request`) and client onboarding (`/start/`, Netlify Form
+`client-onboarding`). Submissions are emailed to info@woodleysolutions.tech and visible in
+Netlify → Forms. The previous home-network site is preserved at git tag `v1-networking-site`;
+its functions and PDF asset are still deployed but unlinked.
+
+Deploy (site is not Git-linked): `netlify deploy --prod --dir . --functions netlify/functions --site 4bf371a6-c5cb-488a-9881-c554c14e32a8`
+
+---
+
 # Woodley Solutions — Landing Page
 
 Lead-capture landing page for **Woodley Solutions**. Cinematic dark landing

@@ -4,6 +4,11 @@
   command = "true"
 
 [[redirects]]
+  from = "/onboarding"
+  to = "/start/"
+  status = 301
+
+[[redirects]]
   from = "/api/lead"
   to = "/.netlify/functions/lead"
   status = 200
