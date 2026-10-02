@@ -5,3 +5,4 @@ data/*.jsonl
 .env
 .netlify/
 supabase/.temp/
+deno.lock

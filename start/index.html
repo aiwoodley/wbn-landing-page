@@ -6,27 +6,30 @@
 <title>Client Onboarding | Woodley Solutions</title>
 <meta name="description" content="Onboarding for approved Woodley Solutions clients: business details, brand assets and account access, in one form.">
 <meta name="robots" content="noindex">
+<link rel="icon" href="/assets/brand/woodley-solutions-icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
+<meta name="theme-color" content="#14213D">
 <link rel="stylesheet" href="/style.css">
 </head>
 <body>
 
-<header class="nav">
-  <div class="nav-inner">
-    <a class="brand" href="/">Woodley Solutions <span class="brand-sub">Client onboarding</span></a>
-    <nav><a href="/">Home</a><a href="/#contact" class="btn btn-primary">Free audit</a></nav>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="logo" href="/" aria-label="Woodley Solutions home"><img src="/assets/brand/woodley-solutions-horizontal.svg" alt="Woodley Solutions" width="230" height="42"></a>
+    <nav aria-label="Main"><a href="/">Home</a><a href="/#request" class="btn btn-primary"><span>Request<span class="long"> an audit</span></span></a></nav>
   </div>
 </header>
 
 <section class="ob-hero">
   <div class="wrap" style="max-width:860px">
-    <p class="eyebrow">You approved a proposal. Welcome aboard.</p>
+    <div class="label"><span class="num">→</span> You signed a proposal. Welcome aboard.</div>
     <h1>Client onboarding</h1>
     <p class="section-sub" style="margin-bottom:18px">This one form gives us everything we need to start the build. It takes about 15 minutes. If you don't know an answer yet, skip it and we'll cover it on the kickoff call.</p>
     <div class="warnbox"><strong>Never send us a password.</strong> Not in this form, not by text or email. Every account below is shared by adding us as a manager or partner, and you can remove us at any time.</div>
   </div>
 </section>
 
-<section style="padding-top:12px">
+<section style="padding:20px 0 104px">
   <div class="wrap" style="max-width:860px">
     <form class="form-card" id="onboard-form" name="client-onboarding" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="company_website" style="max-width:none" novalidate>
       <input type="hidden" name="form-name" value="client-onboarding">
@@ -134,16 +137,20 @@
         </div>
       </div>
 
-      <div style="margin-top:26px"><button type="submit" class="btn btn-primary">Submit onboarding</button></div>
+      <div class="form-actions"><button type="submit" class="btn btn-primary">Submit onboarding <span class="arrow" aria-hidden="true">→</span></button><p class="small">We reply within one business day.</p></div>
       <div class="form-status" role="status" aria-live="polite"></div>
     </form>
   </div>
 </section>
 
 <footer>
-  <div class="wrap foot">
-    <div><p><strong style="color:#fff">Woodley Solutions LLC</strong></p><p>Miramar, Florida</p></div>
-    <div><p><a href="mailto:info@woodleysolutions.tech">info@woodleysolutions.tech</a></p></div>
+  <div class="wrap">
+    <div class="foot">
+      <div><img src="/assets/brand/woodley-solutions-stacked-on-dark.svg" alt="Woodley Solutions" width="150" height="110"></div>
+      <div><h4>Contact</h4><p><a href="mailto:info@woodleysolutions.tech">info@woodleysolutions.tech</a></p><p>Miramar, Florida</p></div>
+      <div><h4>Get started</h4><p><a href="/#request">Request a free audit</a></p><p><a href="/start/">Client onboarding</a></p></div>
+    </div>
+    <div class="legal"><span>© 2026 Woodley Solutions LLC</span><span>You own your accounts. We never ask for passwords.</span></div>
   </div>
 </footer>
 
