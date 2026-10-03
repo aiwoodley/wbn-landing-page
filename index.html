@@ -14,6 +14,7 @@
 <link rel="apple-touch-icon" href="/assets/brand/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/photos/hero-owner.jpg" as="image">
 <link rel="stylesheet" href="/style.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"Woodley Solutions","logo":"https://woodley-solutions.netlify.app/assets/brand/woodley-solutions-icon.svg","description":"Websites, Google Business Profile and map listings, booking and deposits, social media setup, ads setup and AI automation for local businesses.","areaServed":["Miramar, FL","Broward County, FL","Miami-Dade County, FL"],"email":"info@woodleysolutions.tech","founder":[{"@type":"Person","name":"Paul Woodley"},{"@type":"Person","name":"Peter Woodley"}],"address":{"@type":"PostalAddress","addressLocality":"Miramar","addressRegion":"FL","addressCountry":"US"}}
@@ -25,9 +26,8 @@
   <div class="topbar-inner">
     <a class="logo" href="/" aria-label="Woodley Solutions home"><img src="/assets/brand/woodley-solutions-horizontal.svg" alt="Woodley Solutions" width="230" height="42"></a>
     <nav aria-label="Main">
-      <a href="#audit">The audit</a>
-      <a href="#services">What we build</a>
-      <a href="#process">Process</a>
+      <a href="#audit">Audit</a>
+      <a href="#services">Services</a>
       <a href="#about">About</a>
       <a href="#request" class="btn btn-primary"><span>Request<span class="long"> an audit</span></span></a>
     </nav>
@@ -36,77 +36,56 @@
 
 <main>
 <!-- HERO -->
-<section class="hero">
+<section class="hero hero-photo">
   <div class="wrap hero-grid">
     <div>
-      <p class="kicker"><b>Woodley Solutions</b> · Miramar, Florida · Serving Broward &amp; Miami-Dade</p>
-      <h1>Your customers are already looking. <em>Make sure they find you.</em></h1>
-      <p class="lede">We audit how people find, trust and book your business, then build what's missing: your website, map listings, booking and deposits, social setup, and AI that handles the follow-up.</p>
+      <p class="kicker">Miramar, FL · Broward &amp; Miami-Dade</p>
+      <h1>Your customers are looking. <em>Make sure they find you.</em></h1>
+      <p class="lede">Websites, map listings, booking and AI for local businesses. It starts with a free audit.</p>
       <div class="hero-actions">
-        <a href="#request" class="btn btn-primary">Request a free audit <span class="arrow" aria-hidden="true">→</span></a>
-        <a href="#audit" class="btn btn-line">What the audit covers</a>
+        <a href="#request" class="btn btn-primary">Get a free audit <span class="arrow" aria-hidden="true">→</span></a>
+        <a href="#audit" class="btn btn-line">How it works</a>
       </div>
     </div>
-
-    <div class="sheets" aria-label="Sample page from a Digital Footprint Audit">
-      <div class="sheet">
-        <div class="sheet-head">
-          <div><div class="t">Digital Footprint Audit</div><div class="m">Sample · Neighborhood restaurant · Page 1 of 3</div></div>
-          <img src="/assets/brand/woodley-solutions-mark.svg" alt="" width="30" height="30">
-        </div>
-        <div class="srow"><span class="cat">Search &amp; maps<span class="ev">Address shows a different business</span></span><span class="meter"><i class="lo" style="width:10%"></i></span><b>1.0</b></div>
-        <div class="srow"><span class="cat">Website<span class="ev">No site or single landing page</span></span><span class="meter"><i class="lo" style="width:3%"></i></span><b>0.0</b></div>
-        <div class="srow"><span class="cat">Reviews<span class="ev">None under the current name</span></span><span class="meter"><i class="lo" style="width:5%"></i></span><b>0.5</b></div>
-        <div class="srow"><span class="cat">Social<span class="ev">Real audience, thin content</span></span><span class="meter"><i style="width:55%"></i></span><b>5.5</b></div>
-        <div class="srow"><span class="cat">Booking<span class="ev">DMs only, no deposits</span></span><span class="meter"><i class="lo" style="width:20%"></i></span><b>2.0</b></div>
-        <div class="verdict">
-          <div><div class="v-label">Verdict</div><div class="v-text">A foundation build, not a promotion boost.</div></div>
-          <div class="score">1.8<small>/10</small></div>
-        </div>
-        <div class="sheet-foot">Example only. Every audit is built from your business's public footprint.</div>
+    <figure class="hero-figure">
+      <img src="/assets/photos/hero-owner.jpg" alt="Cafe owner checking her phone in the doorway of her shop" width="1100" height="1375" fetchpriority="high">
+      <div class="score-chip" aria-label="Sample audit score">
+        <span class="chip-label">Sample audit</span>
+        <span class="chip-row"><span>Search &amp; maps</span><b class="lo">1.0</b></span>
+        <span class="chip-row"><span>Website</span><b class="lo">0.0</b></span>
+        <span class="chip-row"><span>Social</span><b>5.5</b></span>
+        <span class="chip-total"><span>Overall</span><b>1.8<small>/10</small></b></span>
       </div>
-    </div>
+    </figure>
   </div>
 </section>
 
-<!-- THE AUDIT -->
+<!-- WHO -->
+<section class="who" aria-label="Businesses we work with">
+  <div class="who-strip">
+    <figure><img src="/assets/photos/barber.jpg" alt="Barber lining up a client's haircut" loading="lazy" width="800" height="1000"><figcaption>Salons &amp; barbers</figcaption></figure>
+    <figure><img src="/assets/photos/restaurant.jpg" alt="Restaurant owner plating a dish" loading="lazy" width="800" height="1000"><figcaption>Restaurants &amp; lounges</figcaption></figure>
+    <figure><img src="/assets/photos/auto.jpg" alt="Auto detailer polishing a car" loading="lazy" width="800" height="1000"><figcaption>Auto</figcaption></figure>
+    <figure><img src="/assets/photos/home-services.jpg" alt="HVAC technician at a Florida home" loading="lazy" width="800" height="1000"><figcaption>Home services</figcaption></figure>
+  </div>
+</section>
+
+<!-- AUDIT -->
 <section class="section" id="audit">
-  <div class="wrap">
-    <div class="label"><span class="num">01</span> The free audit</div>
-    <div class="section-intro">
-      <h2>We walk the path your customer walks, and score every step.</h2>
-      <p>From the first search to the paid booking. Twelve checkpoints across how you show up online and how you run the business behind it, each scored 0 to 10 with the evidence attached.</p>
+  <div class="wrap split">
+    <div>
+      <div class="label"><span class="num">01</span> The free audit</div>
+      <h2>We score every step from search to booking.</h2>
+      <p class="intro">You get a 0–10 scorecard, your top 5 fixes, and a 90-day plan within 3 business days.</p>
     </div>
-
-    <div class="ledger" role="table" aria-label="What the audit checks">
-      <div class="ledger-head" role="row"><span></span><span>Checkpoint</span><span>What we look at</span><span>The question it answers</span></div>
-
-      <div class="ledger-group">Your digital footprint</div>
-      <div class="ledger-row" role="row"><span class="n">01</span><h3>Search &amp; maps</h3><p class="what">Google Business Profile, Apple Maps, Waze. Name, pin, hours, categories, and other businesses listed at your address.</p><p class="q">Can someone who types your name actually get to your door?</p></div>
-      <div class="ledger-row" role="row"><span class="n">02</span><h3>Website</h3><p class="what">Whether you have one, what it holds, how it loads on a phone, and whether Google can read it.</p><p class="q">Is there one place that answers every question?</p></div>
-      <div class="ledger-row" role="row"><span class="n">03</span><h3>Reviews</h3><p class="what">Count, rating and recency on Google, Yelp and Apple. Whether anyone replies.</p><p class="q">Would a stranger trust you over the place next door?</p></div>
-      <div class="ledger-row" role="row"><span class="n">04</span><h3>Social</h3><p class="what">Followers against posts, posting rhythm, the link in your bio, and whether profiles send people anywhere.</p><p class="q">Is your audience bigger than what's behind it?</p></div>
-      <div class="ledger-row" role="row"><span class="n">05</span><h3>Consistency</h3><p class="what">Name, address and phone across every platform, plus whether the look carries off Instagram.</p><p class="q">Does every listing agree with every other one?</p></div>
-      <div class="ledger-row" role="row"><span class="n">06</span><h3>Ads readiness</h3><p class="what">Ad accounts, tracking, and your category against Meta and Google ad policies.</p><p class="q">Can you advertise at all, and how?</p></div>
-
-      <div class="ledger-group">How you operate</div>
-      <div class="ledger-row" role="row"><span class="n">07</span><h3>Booking</h3><p class="what">How customers reserve, order or request a quote today, and what gets lost along the way.</p><p class="q">How many customers give up before they book?</p></div>
-      <div class="ledger-row" role="row"><span class="n">08</span><h3>Payments</h3><p class="what">Deposits, prepayment and no-show protection.</p><p class="q">Are you holding the risk when someone doesn't show?</p></div>
-      <div class="ledger-row" role="row"><span class="n">09</span><h3>Customer list</h3><p class="what">Whether you capture phone numbers or emails, and whether you have consent to message them.</p><p class="q">Can you bring last month's customers back?</p></div>
-      <div class="ledger-row" role="row"><span class="n">10</span><h3>Response</h3><p class="what">How fast DMs, calls and reviews get answered, and which questions come up over and over.</p><p class="q">What are you answering by hand twenty times a week?</p></div>
-      <div class="ledger-row" role="row"><span class="n">11</span><h3>Dependence</h3><p class="what">How much of your traffic runs through one person, promoter or platform.</p><p class="q">What happens if that one source goes quiet?</p></div>
-      <div class="ledger-row" role="row"><span class="n">12</span><h3>Automation</h3><p class="what">Where AI and simple automations would save real hours without making things worse for customers.</p><p class="q">What can come off your plate this month?</p></div>
-    </div>
-
-    <div class="receive-title"><h3>What lands in your inbox</h3><span class="small">Within 3 business days, followed by a short walkthrough call.</span></div>
-    <div class="receive">
-      <div><h4>Scorecard</h4><p>Every checkpoint scored 0 to 10, plus one overall readiness score.</p></div>
-      <div><h4>Verdict</h4><p>How much help you actually need, in plain English. Sometimes the answer is "not much."</p></div>
-      <div><h4>Top 5 findings</h4><p>The biggest gaps, ranked, each with the evidence we found.</p></div>
-      <div><h4>Channel by channel</h4><p>The status of every platform and the specific fix for each.</p></div>
-      <div><h4>30 / 60 / 90 plan</h4><p>What to do first, and how you'll know it worked.</p></div>
-    </div>
-    <p class="small" style="margin-top:22px">We use public information only. Items that need owner access, like ad history or Instagram insights, are marked unverified.</p>
+    <ol class="checklist">
+      <li><b>Search &amp; maps</b><span>Can people find you?</span></li>
+      <li><b>Website</b><span>Is there one place with the answers?</span></li>
+      <li><b>Reviews</b><span>Would a stranger trust you?</span></li>
+      <li><b>Social</b><span>Does it send people anywhere?</span></li>
+      <li><b>Booking</b><span>How many give up before they book?</span></li>
+      <li><b>Follow-up</b><span>Can you bring customers back?</span></li>
+    </ol>
   </div>
 </section>
 
@@ -114,45 +93,19 @@
 <section class="section tint" id="services">
   <div class="wrap">
     <div class="label"><span class="num">02</span> What we build</div>
-    <div class="section-intro">
-      <h2>Only what the audit says you need.</h2>
-      <p>Each piece stands on its own, so you never pay for a package to get the one thing that's missing. Every account is created in your business's name, and you keep it.</p>
+    <h2 class="h2-wide">Only what the audit says you need.</h2>
+    <div class="svc-grid">
+      <div><h3>Maps &amp; reviews</h3><p>Google, Apple Maps, Waze, Yelp.</p></div>
+      <div><h3>Website</h3><p>Fast, mobile, on your own domain.</p></div>
+      <div><h3>Booking &amp; deposits</h3><p>Out of the DMs, into your calendar.</p></div>
+      <div><h3>Social setup</h3><p>Profiles and templates that convert.</p></div>
+      <div><h3>Ads setup</h3><p>Tracked, and inside platform rules.</p></div>
+      <div><h3>AI &amp; automation</h3><p>Replies, reminders, follow-ups.</p></div>
     </div>
-
-    <div class="services">
-      <article class="svc"><h3><small>Get found</small>Maps, listings &amp; reviews</h3>
-        <p>Show up when someone searches your name, your street or "near me," with the same details everywhere.</p>
-        <ul><li>Google Business Profile, Apple Maps, Waze</li><li>Yelp, Bing and TripAdvisor where they matter</li><li>QR review cards and a script for your staff</li></ul></article>
-      <article class="svc"><h3><small>Home base</small>Website &amp; link-in-bio</h3>
-        <p>One fast, mobile-first site on your own domain. It doubles as the single link for your bio, flyers and promoters.</p>
-        <ul><li>Menu or services, hours, events, directions</li><li>Local SEO basics so Google can read it</li><li>Analytics that show which links bring people in</li></ul></article>
-      <article class="svc"><h3><small>Get booked</small>Booking, deposits &amp; customer list</h3>
-        <p>Get reservations and quotes out of the DMs, collect deposits, and capture a list you're allowed to message.</p>
-        <ul><li>Booking form with automatic confirmation</li><li>Deposit links through your own Stripe or Square</li><li>Text and email opt-in that follows Florida and federal law</li></ul></article>
-      <article class="svc"><h3><small>Stay visible</small>Social setup</h3>
-        <p>Profiles cleaned up and pointed somewhere, with templates so posting doesn't depend on inspiration.</p>
-        <ul><li>Instagram, Facebook and TikTok</li><li>Weekly lineup and promo templates</li><li>Tracked links for partners and promoters</li></ul></article>
-      <article class="svc"><h3><small>Reach further</small>Ads account setup</h3>
-        <p>An ad account built to stay inside platform rules, with tracking that shows what a booking actually cost.</p>
-        <ul><li>Meta Business Portfolio, ad account, pixel</li><li>Conversion tracking for bookings and sign-ups</li><li>A first campaign built around what you're allowed to advertise</li></ul></article>
-      <article class="svc"><h3><small>Save hours</small>AI &amp; automation</h3>
-        <p>The repetitive parts handled for you, within rules you approve. Nothing posts or sends on its own judgment.</p>
-        <ul><li>DM keyword replies that send your booking link</li><li>Confirmations and reminders</li><li>Drafted review replies for you to approve</li></ul></article>
-    </div>
-
-    <div class="care">
-      <div class="label no-rule" style="margin-bottom:16px">After launch · optional monthly care · move up or down any month</div>
-      <div class="care-grid">
-        <div class="care-col"><h3>Starter</h3><div class="tagline">Keep it accurate</div>
-          <ul><li>Hosting and site updates</li><li>Listing upkeep</li><li>A reply to every review</li><li>Monthly report</li></ul></div>
-        <div class="care-col"><h3>Essentials</h3><div class="tagline">Keep it current</div>
-          <ul><li>Everything in Starter</li><li>Weekly Google posts</li><li>Weekly lineup or promo graphic</li><li>2 social posts a week</li></ul></div>
-        <div class="care-col pick"><h3>Growth</h3><div class="tagline">Keep it moving</div>
-          <ul><li>Everything in Essentials</li><li>4 to 5 social posts a week</li><li>DM and booking follow-up</li><li>Campaigns to your opted-in list</li></ul></div>
-        <div class="care-col"><h3>Growth + Ads</h3><div class="tagline">Keep it growing</div>
-          <ul><li>Everything in Growth</li><li>Ad creative and targeting</li><li>Weekly tuning and reporting</li><li>Ad spend paid straight to the platform</li></ul></div>
-      </div>
-      <div class="pricing-note"><strong>On pricing</strong><p>Pricing comes in your written proposal after the audit: a fixed price for each piece, no bundled extras. Third-party costs like your domain, texting platform and ad spend are billed to you directly, at cost.</p></div>
+    <div class="care-line">
+      <span class="care-label">Monthly care</span>
+      <span class="care-tiers"><b>Starter</b><b>Essentials</b><b>Growth</b><b>Growth + Ads</b></span>
+      <span class="care-note">Optional · change tiers any month · pricing in your proposal</span>
     </div>
   </div>
 </section>
@@ -161,15 +114,12 @@
 <section class="section" id="process">
   <div class="wrap">
     <div class="label"><span class="num">03</span> Process</div>
-    <div class="section-intro">
-      <h2>From first form to launch in about a month.</h2>
-      <p>You approve everything before the public sees it. Nothing is billed until you've read the audit and signed a proposal.</p>
-    </div>
+    <h2 class="h2-wide">Live in about a month.</h2>
     <div class="timeline">
-      <div class="step"><div class="when">Day 1</div><h3>Request</h3><p>A two-minute form. No payment details, no passwords.</p></div>
-      <div class="step"><div class="when">Within 3 days</div><h3>Audit</h3><p>Your scorecard by email, then a short call to walk through it.</p></div>
-      <div class="step"><div class="when">After the call</div><h3>Proposal</h3><p>A fixed price for each piece you need. Sign it and fill out one onboarding form.</p></div>
-      <div class="step"><div class="when">Weeks 1 to 4</div><h3>Build &amp; launch</h3><p>We build it, you approve it, it goes live. Google sets its own timing for verifying listings.</p></div>
+      <div class="step"><div class="when">Day 1</div><h3>Request</h3><p>Two-minute form.</p></div>
+      <div class="step"><div class="when">3 days</div><h3>Audit</h3><p>Scorecard and a short call.</p></div>
+      <div class="step"><div class="when">Then</div><h3>Proposal</h3><p>Fixed price per piece.</p></div>
+      <div class="step"><div class="when">Weeks 1–4</div><h3>Launch</h3><p>You approve, we go live.</p></div>
     </div>
   </div>
 </section>
@@ -183,12 +133,11 @@
     </figure>
     <div>
       <div class="label"><span class="num">04</span> About</div>
-      <blockquote>Two brothers, one standard: <em>you should own every piece of what you pay for.</em></blockquote>
-      <p>Woodley Solutions is run by twin brothers Paul and Peter Woodley in Miramar. Paul is an engineer who builds the systems. Peter is an educator who makes sure you understand what you're getting. Between us, we've built and run our own local businesses, so we know what it takes.</p>
+      <blockquote>Two brothers, one standard: <em>you own every piece of what you pay for.</em></blockquote>
       <ul class="principles">
-        <li><b>You own it</b><span>Domain, listings, accounts and customer list are in your name. Leave any time and take everything with you.</span></li>
-        <li><b>No passwords</b><span>You add us as a manager or partner, and you can remove us with one click.</span></li>
-        <li><b>Straight answers</b><span>If the audit says you don't need us, we'll say so. If a platform won't allow your ads, we'll tell you before you pay.</span></li>
+        <li><b>You own it</b><span>Every account is in your name.</span></li>
+        <li><b>No passwords</b><span>Add us as a manager, remove us anytime.</span></li>
+        <li><b>Straight answers</b><span>If you don't need us, we'll say so.</span></li>
       </ul>
     </div>
   </div>
@@ -199,14 +148,9 @@
   <div class="wrap request-grid">
     <div class="request-side">
       <div class="label"><span class="num">05</span> Start here</div>
-      <h2>Request your free audit.</h2>
-      <p>Two minutes. We'll take it from there.</p>
-      <ol>
-        <li>We confirm by email that we've received it.</li>
-        <li>Within 3 business days, your scorecard arrives.</li>
-        <li>A 20-minute call walks through it, with no pitch unless you ask for one.</li>
-      </ol>
-      <p class="small" style="margin-top:28px">Already signed a proposal? <a href="/start/">Go to client onboarding →</a></p>
+      <h2>Get your free audit.</h2>
+      <p>Two minutes. Scorecard in 3 business days.</p>
+      <p class="small" style="margin-top:28px">Signed a proposal? <a href="/start/">Client onboarding →</a></p>
     </div>
 
     <form class="form-card" id="audit-form" name="audit-request" method="POST" action="/thanks/" data-netlify="true" netlify-honeypot="company_website" novalidate>
@@ -230,28 +174,24 @@
             <option>Other</option>
           </select></div>
         <div><label for="a-name">Your name</label><input id="a-name" name="name" type="text" required autocomplete="name"></div>
-        <div><label for="a-role">Your role <span class="opt">(optional)</span></label><input id="a-role" name="role" type="text" placeholder="Owner, manager, partner"></div>
         <div><label for="a-email">Email</label><input id="a-email" name="email" type="email" required autocomplete="email"></div>
-        <div><label for="a-phone">Phone <span class="opt">(optional)</span></label><input id="a-phone" name="phone" type="tel" autocomplete="tel"></div>
-        <div class="full"><label for="a-address">Business address or service area</label><input id="a-address" name="address" type="text" required placeholder="Street address, or the cities you serve"></div>
-        <div><label for="a-site">Website <span class="opt">(if you have one)</span></label><input id="a-site" name="website" type="text" placeholder="yourbusiness.com"></div>
-        <div><label for="a-social">Instagram, Facebook or TikTok <span class="opt">(optional)</span></label><input id="a-social" name="social" type="text" placeholder="@yourbusiness"></div>
-        <div class="full"><label for="a-other">Other names this business has used, or shares an address with <span class="opt">(optional)</span></label><input id="a-other" name="other_names" type="text" placeholder="Old name, previous business at this address, sister location"></div>
-        <fieldset class="full"><legend>What do you want help with? <span class="opt">(pick any)</span></legend>
-          <div class="checks">
-            <label class="check"><input type="checkbox" name="goal_opt" value="Getting found on Google and maps">Getting found on Google and maps</label>
-            <label class="check"><input type="checkbox" name="goal_opt" value="A website or one link for everything">A website or one link for everything</label>
-            <label class="check"><input type="checkbox" name="goal_opt" value="Bookings out of DMs and phone calls">Bookings out of DMs and phone calls</label>
-            <label class="check"><input type="checkbox" name="goal_opt" value="More reviews">More reviews</label>
-            <label class="check"><input type="checkbox" name="goal_opt" value="Social media that brings in customers">Social media that brings in customers</label>
-            <label class="check"><input type="checkbox" name="goal_opt" value="Running ads">Running ads</label>
-            <label class="check"><input type="checkbox" name="goal_opt" value="Building a customer list">Building a customer list</label>
-            <label class="check"><input type="checkbox" name="goal_opt" value="AI and automation to save time">AI and automation to save time</label>
+        <div><label for="a-phone">Phone <span class="opt">(optional)</span></label><input id="a-phone" name="phone" type="tel" autocomplete="tel"></div><div><label for="a-ref">Referred by <span class="opt">(optional)</span></label><input id="a-ref" name="referral" type="text"></div>
+        <div class="full"><label for="a-address">Address or service area</label><input id="a-address" name="address" type="text" required></div>
+        <div><label for="a-site">Website <span class="opt">(optional)</span></label><input id="a-site" name="website" type="text" placeholder="yourbusiness.com"></div>
+        <div><label for="a-social">Instagram or Facebook <span class="opt">(optional)</span></label><input id="a-social" name="social" type="text" placeholder="@yourbusiness"></div>
+        <fieldset class="full"><legend>Where do you want help? <span class="opt">(pick any)</span></legend>
+          <div class="checks chips">
+            <label class="check"><input type="checkbox" name="goal_opt" value="Getting found on Google and maps">Google &amp; maps</label>
+            <label class="check"><input type="checkbox" name="goal_opt" value="A website or one link for everything">Website</label>
+            <label class="check"><input type="checkbox" name="goal_opt" value="Bookings out of DMs and phone calls">Booking &amp; deposits</label>
+            <label class="check"><input type="checkbox" name="goal_opt" value="More reviews">Reviews</label>
+            <label class="check"><input type="checkbox" name="goal_opt" value="Social media that brings in customers">Social media</label>
+            <label class="check"><input type="checkbox" name="goal_opt" value="Running ads">Ads</label>
+            <label class="check"><input type="checkbox" name="goal_opt" value="Building a customer list">Customer list</label>
+            <label class="check"><input type="checkbox" name="goal_opt" value="AI and automation to save time">AI &amp; automation</label>
           </div></fieldset>
-        <div class="full"><label for="a-book">How do customers book, order or contact you today? <span class="opt">(optional)</span></label><input id="a-book" name="booking_today" type="text" placeholder="Instagram DMs, phone, walk-ins, a booking app..."></div>
-        <div class="full"><label for="a-notes">Anything else we should know? <span class="opt">(optional)</span></label><textarea id="a-notes" name="notes"></textarea></div>
-        <div class="full"><label for="a-ref">How did you hear about us? <span class="opt">(optional)</span></label><input id="a-ref" name="referral" type="text" placeholder="Name of who referred you"></div>
-        <div class="full"><label class="check"><input type="checkbox" name="consent_contact" value="yes" required>It's OK to contact me by email or phone about my audit. You won't be added to any marketing list.</label></div>
+        <div class="full"><label for="a-notes">Anything else? <span class="opt">(optional)</span></label><textarea id="a-notes" name="notes" rows="3"></textarea></div>
+        <div class="full"><label class="check"><input type="checkbox" name="consent_contact" value="yes" required>OK to contact me about my audit. No marketing lists.</label></div>
       </div>
       <div class="form-actions"><button type="submit" class="btn btn-primary">Request my free audit <span class="arrow" aria-hidden="true">→</span></button><p class="small">Free. No obligation.</p></div>
       <div class="form-status" role="status" aria-live="polite"></div>
@@ -264,30 +204,28 @@
   <div class="wrap faq">
     <div>
       <div class="label"><span class="num">06</span> Questions</div>
-      <h2>What owners ask us first.</h2>
+      <h2>Quick answers.</h2>
     </div>
     <div>
-      <details><summary>Is the audit really free?</summary><p>Yes. No payment details, no contract. If it shows you don't need us, we'll tell you.</p></details>
-      <details><summary>Do you need my passwords?</summary><p>No. You add us as a manager or partner on Google, Meta and your payment processor, and you can remove us at any time. The accounts stay in your name.</p></details>
-      <details><summary>Who owns the website, listings and customer list?</summary><p>You do. If you ever stop working with us, we hand everything over, including a copy of the site.</p></details>
-      <details><summary>How long does it take?</summary><p>The audit takes up to 3 business days. A full build usually takes 3 to 4 weeks. Google sets its own timing for verifying listings, which can add a few days.</p></details>
-      <details><summary>Can you run ads for any business?</summary><p>Not always. Meta and Google restrict some categories, like tobacco and hookah, cannabis, firearms and some health services. The audit tells you what's allowed for your business and what we'd do instead.</p></details>
-      <details><summary>What does "AI and automation" mean here?</summary><p>Practical things: replies that send your booking link, confirmations and reminders, drafted review replies you approve, and follow-ups to customers who opted in. Nothing sends without rules you've signed off on.</p></details>
+      <details><summary>Is the audit really free?</summary><p>Yes. No card, no contract.</p></details>
+      <details><summary>Do you need my passwords?</summary><p>No. You add us as a manager and can remove us anytime.</p></details>
+      <details><summary>Who owns everything?</summary><p>You do: domain, listings, accounts and customer list.</p></details>
+      <details><summary>Can you run ads for any business?</summary><p>Not always. Some categories, like tobacco and hookah, are restricted. The audit tells you what's allowed.</p></details>
     </div>
   </div>
 </section>
 </main>
 
-<div class="also"><div class="wrap"><span>Also from Woodley Solutions: home network setup for homes, RVs and small offices.</span><a href="#request" data-network-link>Ask about a network install →</a></div></div>
+<div class="also"><div class="wrap"><span>Also: home network setup for homes, RVs and small offices.</span><a href="#request" data-network-link>Ask about it →</a></div></div>
 
 <footer>
   <div class="wrap">
     <div class="foot">
       <div><img src="/assets/brand/woodley-solutions-stacked-on-dark.svg" alt="Woodley Solutions" width="150" height="110"></div>
-      <div><h4>Contact</h4><p><a href="mailto:info@woodleysolutions.tech">info@woodleysolutions.tech</a></p><p>Miramar, Florida</p><p>Serving Broward &amp; Miami-Dade</p></div>
-      <div><h4>Get started</h4><p><a href="#request">Request a free audit</a></p><p><a href="/start/">Client onboarding</a></p></div>
+      <div><h4>Contact</h4><p><a href="mailto:info@woodleysolutions.tech">info@woodleysolutions.tech</a></p><p>Miramar, Florida</p></div>
+      <div><h4>Get started</h4><p><a href="#request">Free audit</a></p><p><a href="/start/">Client onboarding</a></p></div>
     </div>
-    <div class="legal"><span>© 2026 Woodley Solutions LLC</span><span>You own your accounts. We never ask for passwords.</span></div>
+    <div class="legal"><span>© 2026 Woodley Solutions LLC</span><span>You own your accounts.</span></div>
   </div>
 </footer>
 

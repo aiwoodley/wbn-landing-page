@@ -6,3 +6,4 @@ data/*.jsonl
 .netlify/
 supabase/.temp/
 deno.lock
+raw/
