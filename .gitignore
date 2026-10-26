@@ -7,3 +7,4 @@ data/*.jsonl
 supabase/.temp/
 deno.lock
 raw/
+.resend-domain.json

@@ -7,7 +7,8 @@
     var req = form.querySelectorAll("[required]");
     for (var i = 0; i < req.length; i++) {
       var el = req[i];
-      var ok = el.type === "checkbox" ? el.checked
+      var ok = el.type === "radio" ? !!form.querySelector('input[name="' + el.name + '"]:checked')
+        : el.type === "checkbox" ? el.checked
         : el.type === "email" ? /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value.trim())
         : el.value.trim() !== "";
       el.classList.toggle("invalid", !ok);
@@ -22,6 +23,7 @@
     var btn = form.querySelector("button[type=submit]");
     var label = btn.textContent;
     var onboarding = form.id === "onboard-form";
+    var homepage = form.id === "start-form";
 
     form.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -54,7 +56,9 @@
           status.className = "form-status ok";
           status.textContent = onboarding
             ? "Got it. Within one business day we'll email our invite addresses and Business ID, and confirm your kickoff call."
-            : "Got it. We'll start on your audit and email your scorecard within 3 business days.";
+            : homepage
+              ? "Got it. Check your inbox for a confirmation. We'll reply within one business day."
+              : "Got it. We'll start on your audit and email your scorecard within 3 business days.";
           status.scrollIntoView({ behavior: "smooth", block: "center" });
         })
         .catch(function () {
@@ -66,10 +70,18 @@
     });
   }
 
-  ["audit-form", "onboard-form"].forEach(function (id) {
+  ["start-form", "audit-form", "onboard-form"].forEach(function (id) {
     var f = document.getElementById(id);
     if (f) wire(f);
   });
+
+  // Preselect the need from a link like /?need=ads#start
+  var q = new URLSearchParams(location.search).get("need");
+  if (q) {
+    var map = { audit: "Free audit", website: "Website & listings", social: "Social media", ads: "Paid ads", sponsorships: "Event sponsorships" };
+    var r = document.querySelector('input[name="need"][value="' + (map[q] || "") + '"]');
+    if (r) r.checked = true;
+  }
 
   // "Ask about a network install" preselects that option on the audit form.
   var net = document.querySelector("[data-network-link]");
